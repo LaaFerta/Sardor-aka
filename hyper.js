@@ -3,7 +3,6 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const severless = require("serverless-http")
 const mongoose = require('mongoose')
 const routeAuth = require('./routes//routeAuth')
 const routeGoods = require('./routes/routeGoods')
@@ -31,7 +30,3 @@ app.use('/category', auth, routeCategory)
 app.get('/', (req, res) => {
    res.status(200).send("Assalamu 'Alaykum")
 })
-
-module.exports.controller = async (context, req) => {
-   context.res = await handler(context, req);
-}
