@@ -59,7 +59,7 @@ router.delete('/remove/:id', (req, res) => {
 })
 
 router.get('/category/:name', (req, res) => {
-   Goods.find({ tag: req.params.name })
+   Goods.find({ category: req.params.name })
       .then(data => {
          res.status(200).json({ data })
       }).catch(ex => console.log(ex))
