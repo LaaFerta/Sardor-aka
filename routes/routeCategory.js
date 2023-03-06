@@ -22,6 +22,15 @@ router.post('/add', (req, res) => {
    }).catch(ex => console.log(ex))
 })
 
+router.delete('/:name', (req, res) => {
+   Category.findOneAndRemove({catName: req.params.name}, {}, (error, data) => {
+      if(error) {
+         return res.status(400).json({error})
+      }
+      res.status(200).json({success: "O'chirildi", data})
+   })
+})
+
 
 
 module.exports = router

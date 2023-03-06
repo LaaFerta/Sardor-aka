@@ -1,6 +1,6 @@
 
 
 module.exports = {
-   MONGO_URL: 'mongodb+srv://deviss:dess23@188.k8hesyc.mongodb.net/188',
+   MONGO_URL: 'mongodb+srv://eddess:edd321@sardoraka.rg4xqe1.mongodb.net/SardorAka',
    JWT_KEY: 'dess'
 }

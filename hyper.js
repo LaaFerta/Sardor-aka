@@ -14,7 +14,7 @@ const { MONGO_URL } = require('./config/keys')
 
 const PORT = process.env.PORT || 1000
 const HOST = process.env.HOST
-app.listen(PORT, HOST, () => console.log('Server is live, Alhamdulilah'))
+app.listen(PORT, HOST, () => console.log('Server is live, Alhamdulillah'))
 mongoose.set('strictQuery', false)
 mongoose.connect(MONGO_URL, () => console.log('Connected to MongoDB'))
 
